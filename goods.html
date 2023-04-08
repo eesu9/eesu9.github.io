@@ -33,7 +33,7 @@
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light navbar-expand-lg  fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
       <div class="container">
 
         <!-- Navbar brand (mobile) -->
@@ -68,10 +68,10 @@
           <!-- Navbar nav -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link " href="./goods.html">Beans & Machines</a>
+              <a class="nav-link active" href="./goods.html">Beans & Machines</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./news-and-events.html">News</a>
+              <a class="nav-link " href="./news-and-events.html">News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="./gallery.html">Gallery</a>
@@ -82,101 +82,134 @@
       </div>
     </nav>
 
-    <!-- ARTICLE -->
-    <article class="pt-10 pt-md-12">
+    <!-- HEADER -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/1.jpg);">
+      <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+
+              <!-- Heading -->
+              <h1 class="display-6 fw-bold text-white">
+                Beans and Machines
+              </h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- GALLERY -->
+    <section class="py-7 py-md-9">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
 
-            <!-- Preheading -->
-            <h6 class="text-xs text-primary">
-              News & events
-            </h6>
-
             <!-- Heading -->
-            <h1 class="display-2 mb-4">
-              Begin Barista
-            </h1>
+            <h2 class="mb-2">
+              Espresso Machines
+            </h2>
 
             <!-- Subheading -->
-            <p class="mb-6">
-              초보 바리스타부터 디플로마, 창업컨설팅까지 가능한 호리커피에서 준비하세요.
+            <p class=" mb-6">
+              for cafe
             </p>
 
           </div>
         </div>
-      </div>
-    </article>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- blank -->
+            <img class="img-fluid" src="assets/img/goods/blank.png" alt="...">
+          </div>
 
-    <!-- EVENTS -->
-    <section class="pt-7">
-      <div id="events">
-        <div class="event">
-          <div class="event-lg collapse show bg-cover" id="eventOne" data-bs-parent="#events" style="background-image: url(assets/img/109.jpg);">
-            <div class="bg-black-50">
-              <div class="container">
-                <div class="row py-10">
-                  <div class="col-md-8 col-lg-5">
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/machine_01.png" }'>
+              <img class="img-fluid" src="assets/img/goods/machine_01.png" alt="...">
+            </a>
+          </div>
+        </div>
 
-                    <!-- Date -->
-                    <h3 class="text-xs text-primary">
-                      <time datetime="2021-12-01">December 1, 2021</time>
-                    </h3>
+        <div class="row justify-content-center mt-6">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
 
-                    <!-- Heading -->
-                    <h2 class="mb-3 text-white">
-                      12월 바리스타 수강생 모집
-                    </h2>
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Blend Beans
+            </h2>
 
-                    <!-- Description -->
-                    <p class="mb-6 text-white-75">
-                      12월 바리스타 수강생을 모집합니다. 1:1 또는 2:1로 수업이 진행됩니다.
-                    </p>
+            <!-- Subheading -->
+            <p class=" mb-6">
+              for cafe
+            </p>
 
-                    <!-- Button -->
-                    <a class="btn btn-outline-primary text-white text-primary-hover" onclick="window.open('https://talk.naver.com/wc2o3k?ref=' + encodeURIComponent(location.href) + '#nafullscreen', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');">
-                      Contact Us
-                    </a>
+          </div>
+        </div>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/blend_01.png" }'>
+              <img class="img-fluid" src="assets/img/goods/blend_01.png" alt="...">
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/blend_02.png" }'>
+              <img class="img-fluid" src="assets/img/goods/blend_02.png" alt="...">
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/blend_03.png" }'>
+              <img class="img-fluid" src="assets/img/goods/blend_03.png" alt="...">
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/blend_04.png" }'>
+              <img class="img-fluid" src="assets/img/goods/blend_04.png" alt="...">
+            </a>
+          </div>
+        </div>
 
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="row justify-content-center mt-6">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Single Origin Beans
+            </h2>
+
+            <!-- Subheading -->
+            <p class=" mb-6">
+              for cafe
+            </p>
+
+          </div>
+        </div>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/single_01.png" }'>
+              <img class="img-fluid" src="assets/img/goods/single_01.png" alt="...">
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/single_02.png" }'>
+              <img class="img-fluid" src="assets/img/goods/single_02.png" alt="...">
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/goods/single_03.png" }'>
+              <img class="img-fluid" src="assets/img/goods/single_03.png" alt="...">
+            </a>
           </div>
         </div>
       </div>
-
-      <div class="event">
-          <div class="event-sm collapse show">
-            <div class="container border-top">
-              <div class="row align-items-center py-6">
-                <div class="col-3 col-md-2 col-lg-1">
-
-                  <!-- Date -->
-                  <time class="d-block text-center text-black" datetime="2022-01-01">
-                    <span class="d-block mb-2 display-6 font-serif">-</span>
-                    <span>Jan</span>
-                  </time>
-
-                </div>
-                <div class="col-9 col-md-7 col-lg-8">
-
-                  <!-- Heading -->
-                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventTwo" aria-controls="eventTwo" role="button">
-                    국비지원으로 바리스타에 도전하세요!
-                  </div>
-
-                </div>
-                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
-
-                  <a class="btn btn-outline-primary" onclick="window.open('https://talk.naver.com/wc2o3k?ref=' + encodeURIComponent(location.href) + '#nafullscreen', 'talktalk', 'scrollbars=1, resizable=1, width=486, height=745');">
-                    Contact Us
-                  </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
     </section>
 
     <!-- FOOTER -->
