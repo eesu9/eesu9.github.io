@@ -525,17 +525,17 @@
 
                     <!-- Date -->
                     <h3 class="text-xs text-primary">
-                      <time datetime="2021-12-01">December 1, 2021</time>
+                      <time id="class_month" datetime="2021-12-01">December 1, 2021</time>
                     </h3>
 
                     <!-- Heading -->
-                    <h2 class="mb-3 text-white">
+                    <h2 id="class_headline" class="mb-3 text-white">
                       12월 바리스타 수강생 모집
                     </h2>
 
                     <!-- Description -->
-                    <p class="mb-6 text-white-75">
-                      12월 바리스타 수강생을 모집합니다. 1:1 또는 2:1로 수업이 진행됩니다.
+                    <p id="class_description" class="mb-6 text-white-75">
+                      국비지원으로 바리스타에 도전하세요!
                     </p>
 
                     <!-- Button -->
@@ -845,6 +845,23 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <script>
+      var date = new Date();
+      date.setMonth(date.getMonth() + 1);
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+
+      var class_month = document.getElementById("class_month");
+      class_month.setAttribute("datetime", year + "-" + month);
+      class_month.innerText = date.toLocaleString("en-US", { month: "long"}) + ", " + year;
+
+      var class_headline = document.getElementById("class_headline");
+      class_headline.innerText = month + "월 바리스타 수강생 모집";
+
+      var class_description = document.getElementById("class_description");
+      class_description.innerText = month + "월 초 바리스타 수강생을 모집합니다. ";
+    </script>
 
   </body>
 </html>
